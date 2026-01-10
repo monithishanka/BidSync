@@ -21,21 +21,29 @@ connectDB();
 
 // Middleware
 const allowedOrigins = [
+  'http://localhost:5173',
+  'http://localhost:3000',
   'https://bidsync.online',
   'https://www.bidsync.online',
+  'https://bidsync-client.onrender.com', // Add your Render static site URL if you have one
   process.env.CLIENT_URL
 ].filter(Boolean);
 
+console.log('CORS allowed origins:', allowedOrigins);
+console.log('NODE_ENV:', process.env.NODE_ENV);
+
 app.use(cors({
-  origin: process.env.NODE_ENV === 'production' 
-    ? (origin, callback) => {
-        if (!origin || allowedOrigins.includes(origin)) {
-          callback(null, true);
-        } else {
-          callback(new Error('Not allowed by CORS'));
-        }
-      }
-    : 'http://localhost:5173',
+  origin: (origin, callback) => {
+    // Allow requests with no origin (like mobile apps, Postman, or server-to-server)
+    if (!origin) {
+      return callback(null, true);
+    }
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    }
+    console.log('CORS blocked origin:', origin);
+    callback(new Error('Not allowed by CORS'));
+  },
   credentials: true
 }));
 app.use(express.json());
@@ -74,13 +82,8 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', message: 'BidSync API is running' });
 });
 
-// Serve static files in production
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../client/dist')));
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/dist/index.html'));
-  });
-}
+// Note: Static files are served from a separate Render Static Site
+// This API server only handles /api/* routes
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
