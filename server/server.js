@@ -20,9 +20,21 @@ const app = express();
 connectDB();
 
 // Middleware
+const allowedOrigins = [
+  'https://bidsync.online',
+  'https://www.bidsync.online',
+  process.env.CLIENT_URL
+].filter(Boolean);
+
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? process.env.CLIENT_URL || 'https://bidsync.online'
+    ? (origin, callback) => {
+        if (!origin || allowedOrigins.includes(origin)) {
+          callback(null, true);
+        } else {
+          callback(new Error('Not allowed by CORS'));
+        }
+      }
     : 'http://localhost:5173',
   credentials: true
 }));
