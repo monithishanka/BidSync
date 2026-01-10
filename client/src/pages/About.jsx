@@ -201,9 +201,8 @@ const About = () => {
                 Check out our project on GitHub to explore the source code, documentation, 
                 and technical architecture behind BidSync.
               </p>
-              {/* TODO: Replace the href below with your actual GitHub repository URL */}
               <a 
-                href="https://github.com/YOUR_USERNAME/BidSync" 
+                href="https://github.com/monithishanka/BidSync" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="github-link"

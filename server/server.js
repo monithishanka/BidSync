@@ -22,7 +22,7 @@ connectDB();
 // Middleware
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? 'https://bidsync.onrender.com' 
+    ? process.env.CLIENT_URL || 'https://bidsync.online'
     : 'http://localhost:5173',
   credentials: true
 }));
@@ -41,6 +41,7 @@ app.use(session({
   cookie: {
     secure: process.env.NODE_ENV === 'production',
     httpOnly: true,
+    sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
     maxAge: 24 * 60 * 60 * 1000 // 1 day
   }
 }));

@@ -10,6 +10,11 @@
 </p>
 
 <p align="center">
+  <a href="https://bidsync.online"><img src="https://img.shields.io/badge/🌐_Live_Demo-bidsync.online-10B981?style=for-the-badge" alt="Live Demo"/></a>
+  <a href="https://github.com/monithishanka/BidSync"><img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github" alt="GitHub"/></a>
+</p>
+
+<p align="center">
   <a href="#features">Features</a> •
   <a href="#tech-stack">Tech Stack</a> •
   <a href="#screenshots">Screenshots</a> •
@@ -113,7 +118,7 @@
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/BidSync.git
+   git clone https://github.com/monithishanka/BidSync.git
    cd BidSync
    ```
 
