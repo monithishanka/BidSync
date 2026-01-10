@@ -1,0 +1,95 @@
+.confirm-dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(26, 26, 46, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.confirm-dialog {
+  background-color: var(--bg-primary);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-brutal-xl);
+  width: 100%;
+  max-width: 420px;
+}
+
+.confirm-dialog-header {
+  padding: 1.25rem 1.5rem;
+  border-bottom: var(--border-brutal);
+  background-color: var(--accent-yellow);
+}
+
+.confirm-dialog-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.confirm-dialog-body {
+  padding: 1.5rem;
+}
+
+.confirm-dialog-message {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.confirm-dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  border-top: var(--border-thin);
+  background-color: var(--gray-100);
+}
+
+.confirm-dialog-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: var(--border-brutal);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.confirm-dialog-btn-cancel {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-brutal-xs);
+}
+
+.confirm-dialog-btn-cancel:hover {
+  background-color: var(--gray-100);
+  transform: translate(-1px, -1px);
+  box-shadow: var(--shadow-brutal-sm);
+}
+
+.confirm-dialog-btn-confirm {
+  background-color: var(--accent-coral);
+  color: var(--text-inverse);
+  box-shadow: var(--shadow-brutal-xs);
+}
+
+.confirm-dialog-btn-confirm:hover {
+  background-color: #ff5252;
+  transform: translate(-1px, -1px);
+  box-shadow: var(--shadow-brutal-sm);
+}
+
+/* Success variant */
+.confirm-dialog-btn-confirm.success {
+  background-color: var(--primary);
+}
+
+.confirm-dialog-btn-confirm.success:hover {
+  background-color: var(--primary-hover);
+}

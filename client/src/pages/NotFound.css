@@ -1,0 +1,123 @@
+.not-found-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: var(--bg-secondary);
+}
+
+.not-found-content {
+  text-align: center;
+  max-width: 500px;
+  padding: 3rem;
+  background-color: var(--bg-primary);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-brutal-xl);
+}
+
+.not-found-illustration {
+  position: relative;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.error-code {
+  font-size: 8rem;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.error-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 180px;
+  background-color: var(--accent-yellow);
+  border: var(--border-brutal);
+  z-index: 1;
+}
+
+.not-found-content h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.not-found-content > p {
+  font-size: 1.0625rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.not-found-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.not-found-search {
+  padding-top: 1.5rem;
+  border-top: 3px dashed var(--gray-300);
+}
+
+.not-found-search p {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.search-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: all var(--transition-fast);
+}
+
+.search-link:hover {
+  color: var(--primary-hover);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .not-found-content {
+    padding: 2rem;
+  }
+
+  .error-code {
+    font-size: 5rem;
+  }
+  
+  .error-circle {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .not-found-content h1 {
+    font-size: 1.5rem;
+  }
+  
+  .not-found-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .not-found-actions .btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,479 @@
+.about-page {
+  min-height: 100vh;
+  background-color: var(--secondary);
+}
+
+/* Hero Section */
+.about-page .about-hero {
+  background-color: var(--primary);
+  padding: 80px 0 60px;
+  text-align: center;
+  position: relative;
+  border-bottom: var(--border-thick);
+}
+
+.about-page .about-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.about-page .about-subtitle {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Section Styles */
+.about-page .section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.about-page .section-tag {
+  display: inline-block;
+  background: var(--accent-yellow);
+  color: var(--text-primary);
+  padding: 10px 24px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+  border: var(--border-brutal);
+}
+
+.about-page .section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.about-page .section-subtitle {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Mission Section */
+.about-page .mission-section {
+  padding: 80px 0;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.about-page .mission-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.about-page .mission-text .lead-text {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 24px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.about-page .mission-text p {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.about-page .mission-card {
+  background: rgba(16, 185, 129, 0.1);
+  border: var(--border-thick);
+  padding: 48px 32px;
+  text-align: center;
+  box-shadow: var(--shadow-brutal-lg);
+  transition: all var(--transition-fast);
+}
+
+.about-page .mission-card:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 10px 10px 0 var(--primary);
+}
+
+.about-page .mission-icon {
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.about-page .mission-card h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.about-page .mission-card p {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+}
+
+/* Values Section */
+.about-page .values-section {
+  padding: 80px 0;
+}
+
+.about-page .values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.about-page .value-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 3px solid rgba(255, 255, 255, 0.15);
+  padding: 32px;
+  text-align: center;
+  transition: all var(--transition-fast);
+}
+
+.about-page .value-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--primary);
+  transform: translate(-3px, -3px);
+  box-shadow: 5px 5px 0 var(--primary);
+}
+
+.about-page .value-card:nth-child(1):hover { box-shadow: 5px 5px 0 var(--accent-yellow); border-color: var(--accent-yellow); }
+.about-page .value-card:nth-child(2):hover { box-shadow: 5px 5px 0 var(--accent-coral); border-color: var(--accent-coral); }
+.about-page .value-card:nth-child(3):hover { box-shadow: 5px 5px 0 var(--accent-blue); border-color: var(--accent-blue); }
+.about-page .value-card:nth-child(4):hover { box-shadow: 5px 5px 0 var(--accent-purple); border-color: var(--accent-purple); }
+
+.about-page .value-icon {
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+
+.about-page .value-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.about-page .value-description {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+}
+
+/* Highlights Section */
+.about-page .highlights-section {
+  padding: 80px 0;
+  background: rgba(16, 185, 129, 0.03);
+}
+
+.about-page .highlights-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-page .highlights-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.about-page .highlights-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 16px 20px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  transition: all var(--transition-fast);
+}
+
+.about-page .highlights-list li:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--primary);
+  transform: translate(-2px, -2px);
+  box-shadow: 3px 3px 0 var(--primary);
+}
+
+.about-page .check-icon {
+  color: var(--primary);
+  flex-shrink: 0;
+  font-size: 22px;
+}
+
+/* Team Section */
+.about-page .team-section {
+  padding: 80px 0;
+}
+
+.about-page .team-content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.about-page .team-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: var(--border-thick);
+  padding: 48px 64px;
+  text-align: center;
+  max-width: 500px;
+  box-shadow: var(--shadow-brutal-lg);
+  transition: all var(--transition-fast);
+}
+
+.about-page .team-card:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 10px 10px 0 var(--primary);
+}
+
+.about-page .team-avatar {
+  width: 120px;
+  height: 120px;
+  background-color: var(--primary);
+  border: var(--border-thick);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+  color: white;
+}
+
+.about-page .team-name {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.about-page .team-role {
+  font-size: 1rem;
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.about-page .team-description {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+
+.about-page .academic-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: rgba(168, 85, 247, 0.1);
+  border: 3px solid var(--accent-purple);
+  padding: 24px;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 4px 4px 0 var(--accent-purple);
+}
+
+.about-page .academic-note svg {
+  color: var(--accent-purple);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.about-page .academic-note p {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Open Source Section */
+.about-page .opensource-section {
+  padding: 80px 0;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.about-page .github-card {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: rgba(255, 255, 255, 0.03);
+  border: var(--border-thick);
+  padding: 48px;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-brutal-lg);
+  transition: all var(--transition-fast);
+}
+
+.about-page .github-card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 9px 9px 0 var(--secondary);
+}
+
+.about-page .github-icon {
+  color: white;
+  flex-shrink: 0;
+}
+
+.about-page .github-content h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.about-page .github-content p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-page .github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  padding: 14px 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: var(--border-brutal);
+  box-shadow: var(--shadow-brutal);
+  transition: all var(--transition-fast);
+}
+
+.about-page .github-link:hover {
+  background: var(--accent-yellow);
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--secondary);
+}
+
+/* Final CTA */
+.about-page .about-cta {
+  background-color: var(--primary);
+  padding: 80px 0;
+  text-align: center;
+  border-top: var(--border-thick);
+}
+
+.about-page .about-cta h2 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.about-page .about-cta p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 32px;
+}
+
+.about-page .cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-page .cta-buttons .btn {
+  border: 3px solid white;
+}
+
+.about-page .btn-outline {
+  background: transparent;
+  border: 3px solid white;
+  color: white;
+}
+
+.about-page .btn-outline:hover {
+  background: white;
+  color: var(--primary);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-page .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-page .mission-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .about-page .highlights-list {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .github-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page .about-hero {
+    padding: 60px 0 40px;
+  }
+
+  .about-page .about-title {
+    font-size: 2.25rem;
+  }
+
+  .about-page .about-subtitle {
+    font-size: 1rem;
+  }
+
+  .about-page .section-title {
+    font-size: 1.875rem;
+  }
+
+  .about-page .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .team-card {
+    padding: 32px;
+  }
+
+  .about-page .about-cta h2 {
+    font-size: 1.875rem;
+  }
+
+  .about-page .about-cta p {
+    font-size: 1rem;
+  }
+
+  .about-page .cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .about-page .academic-note {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-page .github-card {
+    padding: 32px;
+  }
+}

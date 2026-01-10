@@ -1,0 +1,16 @@
+/* Reuse the same styling as Terms of Service for consistency */
+@import './TermsOfService.css';
+
+/* Additional specific styles for Privacy Policy if needed */
+.legal-page .rights-contact {
+  background: rgba(168, 85, 247, 0.1);
+  border: 3px solid var(--accent-purple);
+  padding: 16px 20px;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  box-shadow: 4px 4px 0 var(--accent-purple);
+}
+
+.legal-page .rights-contact strong {
+  color: var(--accent-yellow);
+}
