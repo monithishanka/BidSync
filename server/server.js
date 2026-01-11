@@ -16,6 +16,9 @@ const notificationRoutes = require('./routes/notification');
 
 const app = express();
 
+// Trust proxy - REQUIRED for secure cookies behind Render's load balancer
+app.set('trust proxy', 1);
+
 // Connect to MongoDB
 connectDB();
 
