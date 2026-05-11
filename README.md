@@ -219,7 +219,7 @@ BidSync/
 
 ## 👥 Credits
 
-Developed by **Group 26 (864)**
+Developed by ** MK **
 
 ---
 
