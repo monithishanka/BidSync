@@ -219,7 +219,7 @@ BidSync/
 
 ## 👥 Credits
 
-Developed by ** MK **
+Developed by **MK**
 
 ---
 
