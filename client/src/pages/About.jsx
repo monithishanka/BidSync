@@ -151,7 +151,7 @@ const About = () => {
         <div className="container">
           <div className="section-header">
             <span className="section-tag">The Team</span>
-            <h2 className="section-title">Built by Group 26</h2>
+            <h2 className="section-title">Built by MK</h2>
             <p className="section-subtitle">
               This project was developed as part of an academic initiative
             </p>
