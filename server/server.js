@@ -41,7 +41,8 @@ app.use(cors({
     if (!origin) {
       return callback(null, true);
     }
-    if (allowedOrigins.includes(origin)) {
+    const isRenderSubdomain = /^https:\/\/bidsync-client-.*\.onrender\.com$/.test(origin);
+    if (allowedOrigins.includes(origin) || isRenderSubdomain) {
       return callback(null, true);
     }
     console.log('CORS blocked origin:', origin);
