@@ -105,8 +105,7 @@ const Home = () => {
         <div className="container">
           <div className="hero-content">
             <h1 className="hero-title">
-              Transparent Procurement for a
-              <span className="hero-highlight"> Better Tomorrow</span>
+              Transparent Procurement for a <span className="hero-highlight">Better Tomorrow</span>
             </h1>
             <p className="hero-subtitle">
               Discover, bid, and win government and corporate tenders with BidSync's 
