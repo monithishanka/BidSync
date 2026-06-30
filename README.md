@@ -1,5 +1,9 @@
 <p align="center">
-  <img src="screenshots/home.png" alt="BidSync Home" width="700"/>
+  <img src="screenshots/home.png?v=2" alt="BidSync Home" width="700"/>
+</p>
+<p align="center">
+  <img src="screenshots/tenders.png?v=2" alt="BidSync Tenders" width="345"/>
+  <img src="screenshots/login.png?v=2" alt="BidSync Login" width="345"/>
 </p>
 
 <h1 align="center">🏢 BidSync</h1>
@@ -88,19 +92,19 @@
 <details>
 <summary><strong>🏠 Home Page</strong></summary>
 <br/>
-<img src="screenshots/home.png" alt="Home Page" width="700"/>
+<img src="screenshots/home.png?v=2" alt="Home Page" width="700"/>
 </details>
 
 <details>
 <summary><strong>📋 Tenders Listing</strong></summary>
 <br/>
-<img src="screenshots/tenders.png" alt="Tenders Page" width="700"/>
+<img src="screenshots/tenders.png?v=2" alt="Tenders Page" width="700"/>
 </details>
 
 <details>
 <summary><strong>🔑 Login Page</strong></summary>
 <br/>
-<img src="screenshots/login.png" alt="Login Page" width="700"/>
+<img src="screenshots/login.png?v=2" alt="Login Page" width="700"/>
 </details>
 
 ---
